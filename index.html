@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Border Preview</title>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1 class="fancy-underline2">Border Preview</h1>
+        </header>
+
+        <main>
+            <section class="left-panel">
+                <div class="box-container">
+                    <div class="box" id="box"></div>
+                </div>
+            </section>
+
+            <section class="right-panel">
+                <h2 class="fancy-underline">Control Panel</h2>
+                <div class="control-panel">
+                    <div class="border-control">
+                        <div class="slider1">
+                            <div class="range-header">
+                                <div>Top left corner</div>
+                                <div id="slider1TextPreview">0 px</div>
+                            </div>
+                            <div class="slide-container" name="slide-container1">
+                                <input type="range" min="0" max="100" value="0" class="slider" id="myRange1">
+                            </div>
+                        </div>
+
+                        <div class="slider2">
+                            <div class="range-header">
+                                <div>Top right corner</div>
+                                <div id="slider2TextPreview">0 px</div>
+                            </div>
+                            <div class="slide-container" name="slide-container2">
+                                <input type="range" min="0" max="100" value="0" class="slider" id="myRange2">
+                            </div>
+                        </div>
+
+                        <div class="slider3">
+                            <div class="range-header">
+                                <div>Bottom right corner</div>
+                                <div id="slider3TextPreview">0 px</div>
+                            </div>
+                            <div class="slide-container" name="slide-container3">
+                                <input type="range" min="0" max="100" value="0" class="slider" id="myRange3">
+                            </div>
+                        </div>
+
+                        <div class="slider4">
+                            <div class="range-header">
+                                <div>Bottom left corner</div>
+                                <div id="slider4TextPreview">0 px</div>
+                            </div>
+                            <div class="slide-container" name="slide-container4">
+                                <input type="range" min="0" max="100" value="0" class="slider" id="myRange4">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="width-hight-control">
+                        <div class="width-slider">
+                            <div class="range-header">
+                                <div>Width</div>
+                                <div id="widthSliderTextPreview">15 rem</div>
+                            </div>
+                            <div class="slide-container" name="width-slide-container">
+                                <input type="range" min="1" max="200" value="150" class="slider" id="myWidthRange">
+                            </div>
+                        </div>
+
+                        <div class="height-slider">
+                            <div class="range-header">
+                                <div>Height</div>
+                                <div id="heightSliderTextPreview">7 rem</div>
+                            </div>
+                            <div class="slide-container" name="height-slide-container">
+                                <input type="range" min="1" max="200" value="70" class="slider" id="myHeightRange">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <section class="footer">
+            <a href="https://github.com/ZiedDev/" target="_blank">© Zied</a>
+        </section>
+    </div>
+    <script src=" ./scripts/script.js"></script>
+</body>
+
+</html>
