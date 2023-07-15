@@ -248,7 +248,7 @@ main {
 }
 
 .fancy-underline:after {
-    background-image: url("/zaps/zap-08-white.svg");
+    background-image: url("../zaps/zap-08-white.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     content: "";
@@ -261,7 +261,7 @@ main {
 }
 
 .fancy-underline:after {
-    background-image: url("/zaps/zap-08-white.svg")
+    background-image: url("../zaps/zap-08-white.svg")
 }
 
 .fancy-underline2 {
