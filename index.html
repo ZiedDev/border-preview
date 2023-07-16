@@ -2,102 +2,141 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Border Preview</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./styles/style.css">
+   <title>Border Preview</title>
 </head>
 
 <body>
-    <div class="page">
-        <header>
-            <h1 class="fancy-underline2">Border Preview</h1>
-        </header>
+   <div class="page">
+      <header>
+         <h1 class="fancy-underline fancy-underline3">Border Preview</h1>
+      </header>
 
-        <main>
-            <section class="left-panel">
-                <div class="box-container">
-                    <div class="box" id="box"></div>
-                </div>
-            </section>
+      <main>
+         <section class="left-panel">
+            <div class="box-container">
+               <div class="box" id="box"></div>
+            </div>
+         </section>
 
-            <section class="right-panel">
-                <h2 class="fancy-underline">Control Panel</h2>
-                <div class="control-panel">
-                    <div class="border-control">
-                        <div class="slider1">
-                            <div class="range-header">
-                                <div>Top left corner</div>
-                                <div id="slider1TextPreview">0 px</div>
-                            </div>
-                            <div class="slide-container" name="slide-container1">
-                                <input type="range" min="0" max="100" value="0" class="slider" id="myRange1">
-                            </div>
-                        </div>
+         <div class="right-panel">
+            <h2 class="fancy-underline fancy-underline2">Control Panel</h2>
+            <div class="control-panel">
+               <div class="border-control">
+                  <div class="slider1">
+                     <div class="range-header">
+                        <div>Top left corner</div>
 
-                        <div class="slider2">
-                            <div class="range-header">
-                                <div>Top right corner</div>
-                                <div id="slider2TextPreview">0 px</div>
-                            </div>
-                            <div class="slide-container" name="slide-container2">
-                                <input type="range" min="0" max="100" value="0" class="slider" id="myRange2">
-                            </div>
-                        </div>
+                        <input onchange="slider1Change()" type="text" value="0" id="slider1-input"></input>
 
-                        <div class="slider3">
-                            <div class="range-header">
-                                <div>Bottom right corner</div>
-                                <div id="slider3TextPreview">0 px</div>
-                            </div>
-                            <div class="slide-container" name="slide-container3">
-                                <input type="range" min="0" max="100" value="0" class="slider" id="myRange3">
-                            </div>
-                        </div>
+                        <div id="range-header">px</div>
+                     </div>
+                     <div class="slide-container" name="slide-container1">
+                        <input type="range" min="0" max="100" value="0" class="slider" id="myRange1">
+                     </div>
+                  </div>
 
-                        <div class="slider4">
-                            <div class="range-header">
-                                <div>Bottom left corner</div>
-                                <div id="slider4TextPreview">0 px</div>
-                            </div>
-                            <div class="slide-container" name="slide-container4">
-                                <input type="range" min="0" max="100" value="0" class="slider" id="myRange4">
-                            </div>
-                        </div>
-                    </div>
+                  <div class="slider2">
+                     <div class="range-header">
+                        <div>Top right corner</div>
 
-                    <div class="width-hight-control">
-                        <div class="width-slider">
-                            <div class="range-header">
-                                <div>Width</div>
-                                <div id="widthSliderTextPreview">15 rem</div>
-                            </div>
-                            <div class="slide-container" name="width-slide-container">
-                                <input type="range" min="1" max="200" value="150" class="slider" id="myWidthRange">
-                            </div>
-                        </div>
+                        <input onchange="slider2Change()" type="text" value="0" id="slider2-input"></input>
 
-                        <div class="height-slider">
-                            <div class="range-header">
-                                <div>Height</div>
-                                <div id="heightSliderTextPreview">7 rem</div>
-                            </div>
-                            <div class="slide-container" name="height-slide-container">
-                                <input type="range" min="1" max="200" value="70" class="slider" id="myHeightRange">
-                            </div>
-                        </div>
+                        <div id="slider2TextPreview">px</div>
+                     </div>
+                     <div class="slide-container" name="slide-container2">
+                        <input type="range" min="0" max="100" value="0" class="slider" id="myRange2">
+                     </div>
+                  </div>
 
-                    </div>
-                </div>
+                  <div class="slider3">
+                     <div class="range-header">
+                        <div>Bottom right corner</div>
 
-            </section>
-        </main>
+                        <input onchange="slider3Change()" type="text" value="0" id="slider3-input"></input>
 
-        <section class="footer">
-            <a href="https://github.com/ZiedDev/" target="_blank">© Zied</a>
-        </section>
-    </div>
-    <script src=" ./scripts/script.js"></script>
+                        <div id="slider3TextPreview">px</div>
+                     </div>
+                     <div class="slide-container" name="slide-container3">
+                        <input type="range" min="0" max="100" value="0" class="slider" id="myRange3">
+                     </div>
+                  </div>
+
+                  <div class="slider4">
+                     <div class="range-header">
+                        <div>Bottom left corner</div>
+
+                        <input onchange="slider4Change()" type="text" value="0" id="slider4-input"></input>
+
+                        <div id="slider4TextPreview">px</div>
+                     </div>
+                     <div class="slide-container" name="slide-container4">
+                        <input type="range" min="0" max="100" value="0" class="slider" id="myRange4">
+                     </div>
+                  </div>
+               </div>
+
+               <div class="width-hight-control">
+                  <div class="width-slider">
+                     <div class="range-header">
+                        <div>Width</div>
+
+                        <input onchange="widthSliderChange()" type="text" value="0" id="widthSlider-input"></input>
+
+                        <div id="widthSliderTextPreview">rem</div>
+                     </div>
+                     <div class="slide-container" name="width-slide-container">
+                        <input type="range" min="1" max="200" value="150" class="slider" id="myWidthRange">
+                     </div>
+                  </div>
+
+                  <div class="height-slider">
+                     <div class="range-header">
+                        <div>Height</div>
+
+                        <input onchange="heightSliderChange()" type="text" value="0" id="heightSlider-input"></input>
+
+                        <div id="heightSliderTextPreview">rem</div>
+                     </div>
+                     <div class="slide-container" name="height-slide-container">
+                        <input type="range" min="1" max="200" value="70" class="slider" id="myHeightRange">
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+
+      </main>
+
+
+
+      <div class="css-code">
+         <h2 class="fancy-underline fancy-underline1">CSS Code</h2>
+         <div class="code-container">
+            <p id="css-code-preview">Move the sliders to make this panel update</p>
+            <div class="popup" onclick="myFunction()" id=" copy-to-clipboard-btn"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <g fill="none" fill-rule="evenodd">
+                     <path
+                        d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z" />
+                     <path fill="#00000e"
+                        d="M9 2a2 2 0 0 0-2 2v2h2V4h11v11h-2v2h2a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H9ZM4 7a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H4Zm0 2h11v11H4V9Z" />
+                  </g>
+               </svg>
+               <div class="popuptext" id="myPopup">
+                  <p>Copied</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <section class="footer">
+         <a href="https://github.com/ZiedDev/" target="_blank">© Zied</a>
+      </section>
+      <script src=" ./scripts/script.js"></script>
 </body>
 
 </html>
