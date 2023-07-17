@@ -7,8 +7,8 @@ I just wanted to experiment how borders work properly and ended up making this c
 I will try to add more features and fix some bugs (If there are some) and make this project go live to help other developers out there
 
 # Planned features
-- Add CSS preview
-- Add Copy code
+- Add CSS preview ✔️
+- Add Copy code ✔️
 - Add Advanced control so you can choose from px, rem, em, etc  
 - Include Range editor in the advanced settings to you are not limited to 100px only
 
